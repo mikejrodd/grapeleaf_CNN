@@ -18,7 +18,10 @@ The dataset used for training and testing the model can be downloaded from [Kagg
     - The script will automatically create binary classification folders for training and testing.
     - Ensure the dataset is placed correctly as mentioned above.
 
-2. **Run the Training Script**:
+2. **Update File Paths**
+    - Add correct file paths to your downloaded data to `classifier.py`
+
+3. **Run the Training Script**:
 
     ```sh
     python classifier.py
