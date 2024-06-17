@@ -52,8 +52,13 @@ The classifier's goal is to identify Esca disease from a leaf image, even when o
 |---------------|-----------|--------|----------|---------|
 | **esca**      | 0.52      | 1.00   | 0.69     | 480     |
 | **healthy**   | 1.00      | 0.67   | 0.80     | 1325    |
-| **macro avg** | 0.76      | 0.83   | 0.74     | 1805    |
-| **weighted avg** | 0.87   | 0.76   | 0.77     | 1805    |
+
+### Explanation of Metrics
+
+- **Precision**: The ratio of true positive predictions to the total predicted positives. Precision indicates how many of the positive predictions were actually correct.
+- **Recall**: The ratio of true positive predictions to the total actual positives. Recall indicates how many of the actual positives were correctly identified.
+- **F1-Score**: The harmonic mean of precision and recall, providing a single metric that balances both concerns.
+- **Support**: The number of actual occurrences of each class in the dataset.
 
 ### Accuracy
 
