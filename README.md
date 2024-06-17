@@ -48,13 +48,16 @@ The classifier's goal is to identify Esca disease from a leaf image, even when o
 
 ### Classification Report
 
-| Class     | Precision | Recall | F1-Score | Support |
-|-----------|-----------|--------|----------|---------|
-| **esca**  | 0.52      | 1.00   | 0.69     | 480     |
-| **healthy** | 1.00    | 0.67   | 0.80     | 1325    |
-| **accuracy** |         |        | 0.76     | 1805    |
-| **macro avg** | 0.76  | 0.83   | 0.74     | 1805    |
-| **weighted avg** | 0.87 | 0.76 | 0.77     | 1805    |
+| Class         | Precision | Recall | F1-Score | Support |
+|---------------|-----------|--------|----------|---------|
+| **esca**      | 0.52      | 1.00   | 0.69     | 480     |
+| **healthy**   | 1.00      | 0.67   | 0.80     | 1325    |
+| **macro avg** | 0.76      | 0.83   | 0.74     | 1805    |
+| **weighted avg** | 0.87   | 0.76   | 0.77     | 1805    |
+
+### Accuracy
+
+The overall accuracy of the classifier is 0.76 (76%), which indicates the ratio of correctly predicted instances to the total instances.
 
 ### Confusion Matrix
 
