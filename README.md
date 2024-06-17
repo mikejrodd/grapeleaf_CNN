@@ -43,3 +43,26 @@ Esca is a complex and destructive disease affecting grapevines, caused by a grou
 ### Goal of the Classifier
 
 The classifier's goal is to identify Esca disease from a leaf image, even when other diseases like Black Rot or Leaf Blight may be present. By accurately identifying Esca, vineyard managers can take timely actions to control the spread of the disease and protect their grapevines.
+
+## Model Performance Evaluation
+
+### Classification Report
+
+| Class     | Precision | Recall | F1-Score | Support |
+|-----------|-----------|--------|----------|---------|
+| **esca**  | 0.52      | 1.00   | 0.69     | 480     |
+| **healthy** | 1.00    | 0.67   | 0.80     | 1325    |
+| **accuracy** |         |        | 0.76     | 1805    |
+| **macro avg** | 0.76  | 0.83   | 0.74     | 1805    |
+| **weighted avg** | 0.87 | 0.76 | 0.77     | 1805    |
+
+### Confusion Matrix
+
+- **True Positives (TP)**: `esca` correctly identified as `esca`: 480
+- **True Negatives (TN)**: `healthy` correctly identified as `healthy`: 887
+- **False Positives (FP)**: `healthy` incorrectly identified as `esca`: 0
+- **False Negatives (FN)**: `esca` incorrectly identified as `healthy`: 438
+
+The classifier has a high recall for the `esca` class, correctly identifying all actual `esca` samples. However, there are a significant number of false negatives for the `healthy` class, which affects the overall accuracy. The model performs reasonably well, but there is room for improvement, especially in reducing false negatives for `healthy` samples.
+
+
