@@ -216,12 +216,12 @@ history = model.fit(
 
 ```mermaid
 graph TD
-    A[Data Collection (Kaggle dataset)] --> B[Data Preparation (shutil, os)]
-    B --> C[Data Augmentation (ImageDataGenerator)]
-    C --> D[Model Architecture (Keras Sequential)]
-    D --> E[Training the Model (Keras fit)]
-    E --> F[Evaluating the Model (Keras evaluate)]
-    F --> G[Saving the Model (Keras save)]
+    A[Data Collection Kaggle dataset] --> B[Data Preparation shutil os]
+    B --> C[Data Augmentation ImageDataGenerator]
+    C --> D[Model Architecture Keras Sequential]
+    D --> E[Training the Model Keras fit]
+    E --> F[Evaluating the Model Keras evaluate]
+    F --> G[Saving the Model Keras save]
 
     subgraph Data Preparation
         B1[Directory Setup]
