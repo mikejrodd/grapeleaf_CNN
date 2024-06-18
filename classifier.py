@@ -2,21 +2,20 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.callbacks import EarlyStopping
 import os
 import shutil
 
-# Define paths
+# image paths
 original_data_dir = '/Users/michaelrodden/Desktop/original_grape_data'
 train_dir = '/Users/michaelrodden/Desktop/original_grape_data/binary_train'
 test_dir = '/Users/michaelrodden/Desktop/original_grape_data/binary_test'
 
-# Function to clear and create directories
 def clear_and_create_dir(directory):
     if os.path.exists(directory):
         shutil.rmtree(directory)
     os.makedirs(directory)
 
-# Create new directories for binary classification
 clear_and_create_dir(train_dir)
 clear_and_create_dir(test_dir)
 
@@ -24,7 +23,6 @@ for category in ['healthy', 'esca']:
     os.makedirs(os.path.join(train_dir, category), exist_ok=True)
     os.makedirs(os.path.join(test_dir, category), exist_ok=True)
 
-# Function to move files to new directories
 def move_files(src_dir, dst_dir, category):
     for folder in os.listdir(src_dir):
         folder_path = os.path.join(src_dir, folder)
@@ -36,27 +34,25 @@ def move_files(src_dir, dst_dir, category):
                 elif category == 'esca' and folder == 'ESCA':
                     shutil.copy(file_path, os.path.join(dst_dir, 'esca'))
 
-# Move files for training and testing
+# combine images to create healthy and esca paths
 move_files(os.path.join(original_data_dir, 'train'), train_dir, 'healthy')
 move_files(os.path.join(original_data_dir, 'train'), train_dir, 'esca')
 move_files(os.path.join(original_data_dir, 'test'), test_dir, 'healthy')
 move_files(os.path.join(original_data_dir, 'test'), test_dir, 'esca')
 
-# Data augmentation and normalization
 train_datagen = ImageDataGenerator(
     rescale=1./255,
-    rotation_range=20,
-    width_shift_range=0.2,
-    height_shift_range=0.2,
-    shear_range=0.2,
-    zoom_range=0.2,
+    rotation_range=40,
+    width_shift_range=0.3,
+    height_shift_range=0.3,
+    shear_range=0.3,
+    zoom_range=0.3,
     horizontal_flip=True,
     fill_mode='nearest'
 )
 
 test_datagen = ImageDataGenerator(rescale=1./255)
 
-# Create data generators
 train_generator = train_datagen.flow_from_directory(
     train_dir,
     target_size=(150, 150),
@@ -71,7 +67,7 @@ validation_generator = test_datagen.flow_from_directory(
     class_mode='binary'
 )
 
-# Define Focal Loss function
+# focal loss due to complex nature of training data (normal leaves and non-esca diseases being "healthy")
 def focal_loss(gamma=2., alpha=0.25):
     def focal_loss_fixed(y_true, y_pred):
         y_true = tf.cast(y_true, tf.float32)
@@ -82,13 +78,13 @@ def focal_loss(gamma=2., alpha=0.25):
         return tf.reduce_mean(focal_loss_value)
     return focal_loss_fixed
 
-# Build the model
+# model building
 model = Sequential([
-    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
-    MaxPooling2D(2, 2),
-    Conv2D(64, (3, 3), activation='relu'),
+    Conv2D(64, (3, 3), activation='relu', input_shape=(150, 150, 3)),
     MaxPooling2D(2, 2),
     Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Conv2D(256, (3, 3), activation='relu'),
     MaxPooling2D(2, 2),
     Flatten(),
     Dense(512, activation='relu'),
@@ -96,22 +92,38 @@ model = Sequential([
     Dense(1, activation='sigmoid')
 ])
 
-# Compile the model with gradient clipping
-optimizer = tf.keras.optimizers.Adam(clipvalue=1.0)
+# Adjust class weights to reduce ESCA false negatives
+class_weights = {0: 1.0, 1: 2.3} 
+
+# Compile the model with class weights and learning rate adjustment
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.0001, clipvalue=1.0)
 model.compile(
-    loss=focal_loss(gamma=2., alpha=0.25),
     optimizer=optimizer,
+    loss=focal_loss(gamma=2., alpha=0.25),
     metrics=['accuracy']
 )
 
-# Train the model
+# Define early stopping callback
+early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+
+# Train the model with class weights and early stopping
 history = model.fit(
     train_generator,
     steps_per_epoch=train_generator.samples // train_generator.batch_size,
     epochs=15,
     validation_data=validation_generator,
-    validation_steps=validation_generator.samples // validation_generator.batch_size
+    validation_steps=validation_generator.samples // validation_generator.batch_size,
+    class_weight=class_weights,
+    callbacks=[early_stopping]
 )
+
+# save keras model
+model.save('grapeleaf_classifier_best.keras')
+
+# evaluate
+loss, accuracy = model.evaluate(validation_generator)
+print(f'Test accuracy: {accuracy}, Test loss: {loss}')
+
 
 # Save the model in the new Keras format
 model.save('grapeleaf_classifier_new.keras')
