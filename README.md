@@ -214,14 +214,41 @@ history = model.fit(
 
 ## Data Pipeline Summary
 
-## Data Pipeline for Grapevine Disease Classification
-
 ```mermaid
-graph TD;
-    A[Data Collection (Kaggle dataset)] --> B[Data Preparation: Directory Setup, Data Moving (shutil)];
-    B --> C[Data Augmentation (ImageDataGenerator): Rescale, Rotate, Shift, Shear, Zoom, Flip];
-    C --> D[Model Architecture (Keras Sequential): Conv2D, MaxPooling2D, Flatten, Dense, Dropout];
-    D --> E[Training the Model (Keras fit): Adam Optimizer, Focal Loss, Class Weights, Early Stopping];
-    E --> F[Evaluating the Model (Keras evaluate)];
-    F --> G[Saving the Model (Keras save)];
+graph TD
+    A[Data Collection] --> B[Data Preparation]
+    B --> C[Data Augmentation]
+    C --> D[Model Architecture]
+    D --> E[Training the Model]
+    E --> F[Evaluating the Model]
+    F --> G[Saving the Model]
+
+    subgraph B
+        B1[Directory Setup]
+        B2[Data Moving]
+    end
+
+    subgraph C
+        C1[Rescale]
+        C2[Rotate]
+        C3[Shift]
+        C4[Shear]
+        C5[Zoom]
+        C6[Flip]
+    end
+
+    subgraph D
+        D1[Conv2D]
+        D2[MaxPooling2D]
+        D3[Flatten]
+        D4[Dense]
+        D5[Dropout]
+    end
+
+    subgraph E
+        E1[Adam Optimizer]
+        E2[Focal Loss]
+        E3[Class Weights]
+        E4[Early Stopping]
+    end
 
