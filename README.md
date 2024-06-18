@@ -212,63 +212,13 @@ history = model.fit(
 )
 ```
 
-## Model Summary
+## Data Pipeline Summary
 
-
-+-------------------+
-|   Data Collection |
-| (Kaggle dataset)  |
-+-------------------+
-|
-v
-          +-------------------+
-          |  Data Preparation |
-          |  - Directory Setup|
-          |  - Data Moving    |
-          |  (shutil)         |
-          +-------------------+
-                    |
-                    v
-          +---------------------------+
-          |     Data Augmentation     |
-          |  (ImageDataGenerator)     |
-          |  - Rescale                |
-          |  - Rotate                 |
-          |  - Shift                  |
-          |  - Shear                  |
-          |  - Zoom                   |
-          |  - Flip                   |
-          +---------------------------+
-                    |
-                    v
-          +---------------------------+
-          |     Model Architecture    |
-          |  (Keras Sequential)       |
-          |  - Conv2D                 |
-          |  - MaxPooling2D           |
-          |  - Flatten                |
-          |  - Dense                  |
-          |  - Dropout                |
-          +---------------------------+
-                    |
-                    v
-          +---------------------------+
-          |    Training the Model     |
-          |  (Keras fit)              |
-          |  - Adam Optimizer         |
-          |  - Focal Loss             |
-          |  - Class Weights          |
-          |  - Early Stopping         |
-          +---------------------------+
-                    |
-                    v
-          +---------------------------+
-          |   Evaluating the Model    |
-          |  (Keras evaluate)         |
-          +---------------------------+
-                    |
-                    v
-          +---------------------------+
-          |    Saving the Model       |
-          |  (Keras save)             |
-          +---------------------------+
+```mermaid
+graph TD;
+    A[Data Collection<br/>(Kaggle dataset)] --> B[Data Preparation<br/>- Directory Setup<br/>- Data Moving<br/>(shutil)];
+    B --> C[Data Augmentation<br/>(ImageDataGenerator)<br/>- Rescale<br/>- Rotate<br/>- Shift<br/>- Shear<br/>- Zoom<br/>- Flip];
+    C --> D[Model Architecture<br/>(Keras Sequential)<br/>- Conv2D<br/>- MaxPooling2D<br/>- Flatten<br/>- Dense<br/>- Dropout];
+    D --> E[Training the Model<br/>(Keras fit)<br/>- Adam Optimizer<br/>- Focal Loss<br/>- Class Weights<br/>- Early Stopping];
+    E --> F[Evaluating the Model<br/>(Keras evaluate)];
+    F --> G[Saving the Model<br/>(Keras save)];
