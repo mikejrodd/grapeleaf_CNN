@@ -20,7 +20,7 @@ test_generator = test_datagen.flow_from_directory(
 )
 
 # Load the model in the new Keras format
-model = load_model('grapeleaf_classifier_new.keras', compile=False)
+model = load_model('grapeleaf_classifier_best.keras', compile=False)
 
 # Compile the model with the custom loss function
 def focal_loss(gamma=2., alpha=0.25):
