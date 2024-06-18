@@ -219,9 +219,9 @@ graph TD
     A[Kaggle dataset] --> B[Data Preparation]
     B --> C[Data Augmentation]
     C --> D[Model Architecture]
-    D --> E[Training the Model Keras fit]
+    D --> E[Training the Model]
     E --> F[Evaluating the Model]
-    F --> G[Saving the Model Keras save]
+    F --> G[Keras save]
 
     subgraph B [shutil os]
         B1[Directory Setup]
