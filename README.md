@@ -223,31 +223,18 @@ graph TD
     E --> F[Evaluating the Model Keras evaluate]
     F --> G[Saving the Model Keras save]
 
-    subgraph Data Preparation
-        B1[Directory Setup]
-        B2[Data Moving]
+    subgraph B[Data Preparation]
+        B1[Directory Setup] --> B2[Data Moving]
     end
 
-    subgraph Data Augmentation
-        C1[Rescale]
-        C2[Rotate]
-        C3[Shift]
-        C4[Shear]
-        C5[Zoom]
-        C6[Flip]
+    subgraph C[Data Augmentation]
+        C1[Rescale] --> C2[Rotate] --> C3[Shift] --> C4[Shear] --> C5[Zoom] --> C6[Flip]
     end
 
-    subgraph Model Architecture
-        D1[Conv2D]
-        D2[MaxPooling2D]
-        D3[Flatten]
-        D4[Dense]
-        D5[Dropout]
+    subgraph D[Model Architecture]
+        D1[Conv2D] --> D2[MaxPooling2D] --> D3[Flatten] --> D4[Dense] --> D5[Dropout]
     end
 
-    subgraph Training the Model
-        E1[Adam Optimizer]
-        E2[Focal Loss]
-        E3[Class Weights]
-        E4[Early Stopping]
+    subgraph E[Training the Model]
+        E1[Adam Optimizer] --> E2[Focal Loss] --> E3[Class Weights] --> E4[Early Stopping]
     end
