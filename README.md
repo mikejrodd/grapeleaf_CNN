@@ -50,8 +50,8 @@ The classifier's goal is to identify Esca disease from a leaf image, even when o
 
 | Class         | Precision | Recall | F1-Score | Support |
 |---------------|-----------|--------|----------|---------|
-| **esca**      | 0.52      | 1.00   | 0.69     | 480     |
-| **healthy**   | 1.00      | 0.67   | 0.80     | 1325    |
+| **esca**      | 0.79      | 0.97   | 0.87     | 480     |
+| **healthy**   | 0.99      | 0.90   | 0.94     | 1325    |
 
 ### Explanation of Metrics
 
@@ -62,15 +62,14 @@ The classifier's goal is to identify Esca disease from a leaf image, even when o
 
 ### Accuracy
 
-The overall accuracy of the classifier is 0.76 (76%), which indicates the ratio of correctly predicted instances to the total instances.
+The overall accuracy of the classifier is 0.92 (92%), which indicates the ratio of correctly predicted instances to the total instances.
 
 ### Confusion Matrix
 
-- **True Positives (TP)**: `esca` correctly identified as `esca`: 480
-- **True Negatives (TN)**: `healthy` correctly identified as `healthy`: 887
-- **False Positives (FP)**: `healthy` incorrectly identified as `esca`: 0
-- **False Negatives (FN)**: `esca` incorrectly identified as `healthy`: 438
+- **True Positives (TP)**: `esca` correctly identified as `esca`: 468
+- **True Negatives (TN)**: `healthy` correctly identified as `healthy`: 1197
+- **False Positives (FP)**: `healthy` incorrectly identified as `esca`: 12
+- **False Negatives (FN)**: `esca` incorrectly identified as `healthy`: 128
 
-The classifier has a high recall for the `esca` class, correctly identifying all actual `esca` samples. However, there are a significant number of false negatives for the `healthy` class, which affects the overall accuracy. The model performs reasonably well, but there is room for improvement, especially in reducing false negatives for `healthy` samples.
 
 
