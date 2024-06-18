@@ -216,19 +216,19 @@ history = model.fit(
 
 ```mermaid
 graph TD
-    A[Data Collection] --> B[Data Preparation]
-    B --> C[Data Augmentation]
-    C --> D[Model Architecture]
-    D --> E[Training the Model]
-    E --> F[Evaluating the Model]
-    F --> G[Saving the Model]
+    A[Data Collection (Kaggle dataset)] --> B[Data Preparation (shutil, os)]
+    B --> C[Data Augmentation (ImageDataGenerator)]
+    C --> D[Model Architecture (Keras Sequential)]
+    D --> E[Training the Model (Keras fit)]
+    E --> F[Evaluating the Model (Keras evaluate)]
+    F --> G[Saving the Model (Keras save)]
 
-    subgraph B
+    subgraph Data Preparation
         B1[Directory Setup]
         B2[Data Moving]
     end
 
-    subgraph C
+    subgraph Data Augmentation
         C1[Rescale]
         C2[Rotate]
         C3[Shift]
@@ -237,7 +237,7 @@ graph TD
         C6[Flip]
     end
 
-    subgraph D
+    subgraph Model Architecture
         D1[Conv2D]
         D2[MaxPooling2D]
         D3[Flatten]
@@ -245,10 +245,9 @@ graph TD
         D5[Dropout]
     end
 
-    subgraph E
+    subgraph Training the Model
         E1[Adam Optimizer]
         E2[Focal Loss]
         E3[Class Weights]
         E4[Early Stopping]
     end
-
