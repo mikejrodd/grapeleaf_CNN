@@ -211,3 +211,64 @@ history = model.fit(
     callbacks=[early_stopping]
 )
 ```
+
+## Model Summary
+
+
+          +-------------------+
+          |   Data Collection |
+          | (Kaggle dataset)  |
+          +-------------------+
+                    |
+                    v
+          +-------------------+
+          |  Data Preparation |
+          |  - Directory Setup|
+          |  - Data Moving    |
+          |  (shutil)         |
+          +-------------------+
+                    |
+                    v
+          +---------------------------+
+          |     Data Augmentation     |
+          |  (ImageDataGenerator)     |
+          |  - Rescale                |
+          |  - Rotate                 |
+          |  - Shift                  |
+          |  - Shear                  |
+          |  - Zoom                   |
+          |  - Flip                   |
+          +---------------------------+
+                    |
+                    v
+          +---------------------------+
+          |     Model Architecture    |
+          |  (Keras Sequential)       |
+          |  - Conv2D                 |
+          |  - MaxPooling2D           |
+          |  - Flatten                |
+          |  - Dense                  |
+          |  - Dropout                |
+          +---------------------------+
+                    |
+                    v
+          +---------------------------+
+          |    Training the Model     |
+          |  (Keras fit)              |
+          |  - Adam Optimizer         |
+          |  - Focal Loss             |
+          |  - Class Weights          |
+          |  - Early Stopping         |
+          +---------------------------+
+                    |
+                    v
+          +---------------------------+
+          |   Evaluating the Model    |
+          |  (Keras evaluate)         |
+          +---------------------------+
+                    |
+                    v
+          +---------------------------+
+          |    Saving the Model       |
+          |  (Keras save)             |
+          +---------------------------+
