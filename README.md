@@ -73,7 +73,7 @@ The overall accuracy of the classifier is 0.92 (92%), which indicates the ratio 
 
 ## Detailed Explanation of Model Training Components
 
-This section explains the various components and steps involved in training the Esca Disease Classifier for grape vines.
+This section explains the various components and steps involved in training the Esca Disease Classifier for grape leaf images.
 
 ### Libraries Needed
 
