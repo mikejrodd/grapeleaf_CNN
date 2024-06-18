@@ -215,12 +215,12 @@ history = model.fit(
 ## Model Summary
 
 
-          +-------------------+
-          |   Data Collection |
-          | (Kaggle dataset)  |
-          +-------------------+
-                    |
-                    v
++-------------------+
+|   Data Collection |
+| (Kaggle dataset)  |
++-------------------+
+|
+v
           +-------------------+
           |  Data Preparation |
           |  - Directory Setup|
