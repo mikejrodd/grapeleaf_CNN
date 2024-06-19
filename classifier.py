@@ -123,7 +123,3 @@ model.save('grapeleaf_classifier_best.keras')
 # evaluate
 loss, accuracy = model.evaluate(validation_generator)
 print(f'Test accuracy: {accuracy}, Test loss: {loss}')
-
-
-# Save the model in the new Keras format
-model.save('grapeleaf_classifier_new.keras')
