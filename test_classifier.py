@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 import numpy as np
 
 # Define paths
@@ -16,11 +16,11 @@ test_generator = test_datagen.flow_from_directory(
     target_size=(150, 150),
     batch_size=32,
     class_mode='binary',
-    shuffle=False  # Important to set shuffle=False to match predictions with true labels
+    shuffle=False 
 )
 
 # Load the model in the new Keras format
-model = load_model('grapeleaf_classifier_best.keras', compile=False)
+model = load_model('grapeleaf_classifier.keras', compile=False)
 
 # Compile the model with the custom loss function
 def focal_loss(gamma=2., alpha=0.25):
@@ -46,9 +46,9 @@ print(f'Test accuracy: {accuracy}, Test loss: {loss}')
 # Get the ground truth labels
 y_true = test_generator.classes
 
-# Get the predicted labels
-y_pred = model.predict(test_generator)
-y_pred = np.round(y_pred).astype(int).flatten()
+# Get the predicted probabilities
+y_pred_prob = model.predict(test_generator)
+y_pred = np.round(y_pred_prob).astype(int).flatten()
 
 # Print classification report
 print("Classification Report:")
@@ -57,3 +57,7 @@ print(classification_report(y_true, y_pred, target_names=test_generator.class_in
 # Print confusion matrix
 print("Confusion Matrix:")
 print(confusion_matrix(y_true, y_pred))
+
+# Calculate and print the AUC
+image_auc = roc_auc_score(y_true, y_pred_prob)
+print(f'Image AUC: {image_auc}')
