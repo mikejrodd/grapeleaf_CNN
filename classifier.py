@@ -95,22 +95,19 @@ model = Sequential([
 # Adjust class weights to reduce ESCA false negatives
 class_weights = {0: 1.0, 1: 2.3} 
 
-# Compile the model with class weights and learning rate adjustment
-optimizer = tf.keras.optimizers.Adam(learning_rate=0.0001, clipvalue=1.0)
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.000001, clipvalue=1.0)
 model.compile(
     optimizer=optimizer,
-    loss=focal_loss(gamma=2., alpha=0.25),
+    loss=focal_loss(gamma=2., alpha=0.75),
     metrics=['accuracy']
 )
 
-# Define early stopping callback
 early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
 
-# Train the model with class weights and early stopping
 history = model.fit(
     train_generator,
     steps_per_epoch=train_generator.samples // train_generator.batch_size,
-    epochs=15,
+    epochs=20,
     validation_data=validation_generator,
     validation_steps=validation_generator.samples // validation_generator.batch_size,
     class_weight=class_weights,
@@ -123,3 +120,13 @@ model.save('grapeleaf_classifier_best.keras')
 # evaluate
 loss, accuracy = model.evaluate(validation_generator)
 print(f'Test accuracy: {accuracy}, Test loss: {loss}')
+
+y_true = test_generator.classes
+y_pred_prob = model.predict(test_generator)
+y_pred = np.round(y_pred_prob).astype(int).flatten()
+
+print("Classification Report:")
+print(classification_report(y_true, y_pred, target_names=test_generator.class_indices.keys()))
+
+print("Confusion Matrix:")
+print(confusion_matrix(y_true, y_pred))
