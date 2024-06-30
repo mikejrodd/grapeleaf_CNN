@@ -6,10 +6,9 @@ from tensorflow.keras.callbacks import EarlyStopping
 import os
 import shutil
 
-# image paths
-original_data_dir = '/Users/michaelrodden/Desktop/original_grape_data'
-train_dir = '/Users/michaelrodden/Desktop/original_grape_data/binary_train'
-test_dir = '/Users/michaelrodden/Desktop/original_grape_data/binary_test'
+original_data_dir = '/content/drive/MyDrive/gtprac/original_grape_data'
+train_dir = '/content/drive/MyDrive/gtprac/original_grape_data/binary_train'
+test_dir = '/content/drive/MyDrive/gtprac/original_grape_data/binary_test'
 
 def clear_and_create_dir(directory):
     if os.path.exists(directory):
@@ -115,7 +114,7 @@ history = model.fit(
 )
 
 # save keras model
-model.save('grapeleaf_classifier_best.keras')
+# model.save('grapeleaf_classifier_best.keras')
 
 # evaluate
 loss, accuracy = model.evaluate(validation_generator)
