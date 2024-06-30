@@ -1,19 +1,33 @@
-29/29 [==============================] - 78s 203ms/step - loss: 1.0241 - categorical_accuracy: 0.5608 - val_loss: 0.5840 - val_categorical_accuracy: 0.7307
-Epoch 2/5
-29/29 [==============================] - 14s 162ms/step - loss: 0.4814 - categorical_accuracy: 0.8146 - val_loss: 0.3473 - val_categorical_accuracy: 0.8742
-Epoch 3/5
-29/29 [==============================] - 14s 158ms/step - loss: 0.3474 - categorical_accuracy: 0.8664 - val_loss: 0.3199 - val_categorical_accuracy: 0.8681
-Epoch 4/5
-29/29 [==============================] - 14s 163ms/step - loss: 0.2744 - categorical_accuracy: 0.8946 - val_loss: 0.2437 - val_categorical_accuracy: 0.9097
-Epoch 5/5
-29/29 [==============================] - 14s 160ms/step - loss: 0.2266 - categorical_accuracy: 0.9139 - val_loss: 0.2658 - val_categorical_accuracy: 0.8970
-8/8 [==============================] - 2s 31ms/step - loss: 0.2658 - categorical_accuracy: 0.8970
-Test accuracy: 0.8969529271125793, Test loss: 0.2658432424068451
+29/29 [==============================] - 77s 208ms/step - loss: 1.0151 - categorical_accuracy: 0.5594 - val_loss: 0.5516 - val_categorical_accuracy: 0.8338
+Epoch 2/12
+29/29 [==============================] - 13s 157ms/step - loss: 0.4659 - categorical_accuracy: 0.8164 - val_loss: 0.3564 - val_categorical_accuracy: 0.8565
+Epoch 3/12
+29/29 [==============================] - 14s 158ms/step - loss: 0.3359 - categorical_accuracy: 0.8718 - val_loss: 0.2956 - val_categorical_accuracy: 0.8886
+Epoch 4/12
+29/29 [==============================] - 14s 155ms/step - loss: 0.2741 - categorical_accuracy: 0.8960 - val_loss: 0.2256 - val_categorical_accuracy: 0.9091
+Epoch 5/12
+29/29 [==============================] - 13s 154ms/step - loss: 0.2260 - categorical_accuracy: 0.9143 - val_loss: 0.3011 - val_categorical_accuracy: 0.8864
+Epoch 6/12
+29/29 [==============================] - 14s 153ms/step - loss: 0.1939 - categorical_accuracy: 0.9313 - val_loss: 0.2296 - val_categorical_accuracy: 0.9058
+Epoch 7/12
+29/29 [==============================] - 14s 156ms/step - loss: 0.1562 - categorical_accuracy: 0.9457 - val_loss: 0.2094 - val_categorical_accuracy: 0.9097
+Epoch 8/12
+29/29 [==============================] - 14s 154ms/step - loss: 0.1392 - categorical_accuracy: 0.9504 - val_loss: 0.1858 - val_categorical_accuracy: 0.9208
+Epoch 9/12
+29/29 [==============================] - 14s 164ms/step - loss: 0.1250 - categorical_accuracy: 0.9547 - val_loss: 0.1407 - val_categorical_accuracy: 0.9463
+Epoch 10/12
+29/29 [==============================] - 14s 159ms/step - loss: 0.1147 - categorical_accuracy: 0.9603 - val_loss: 0.1444 - val_categorical_accuracy: 0.9457
+Epoch 11/12
+29/29 [==============================] - 14s 161ms/step - loss: 0.1063 - categorical_accuracy: 0.9626 - val_loss: 0.0995 - val_categorical_accuracy: 0.9623
+Epoch 12/12
+29/29 [==============================] - 14s 153ms/step - loss: 0.0996 - categorical_accuracy: 0.9643 - val_loss: 0.1743 - val_categorical_accuracy: 0.9291
+8/8 [==============================] - 2s 30ms/step - loss: 0.1743 - categorical_accuracy: 0.9291
+Test accuracy: 0.9290858507156372, Test loss: 0.17426984012126923
 Found 1805 images belonging to 2 classes.
-8/8 [==============================] - 8s 909ms/step
-Average prediction value for healthy: 0.2768717110157013
-Average prediction value for esca: 0.88603276014328
-Custom threshold: 0.5814522504806519
+8/8 [==============================] - 8s 996ms/step
+Average prediction value for healthy: 0.28694164752960205
+Average prediction value for esca: 0.9304653406143188
+Custom threshold: 0.6087034940719604
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0075b632-2e34-4e4f-9697-fe2b332b7ef8___FAM_B.Msls 4399_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/01162551-b800-4df8-ac46-64d17d6ac5bf___FAM_B.Msls 1153_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/011f307f-e06b-4604-9419-d940f7b00290___FAM_B.Msls 1096.JPG, Predicted class: esca, True class: esca
@@ -34,7 +48,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0ad02
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0bf809ec-841e-4668-b875-adeb73d60de0___FAM_B.Msls 4057.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0cc3eac2-1289-4aee-9936-b541ca7fbffa___FAM_B.Msls 4234.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0cca45be-2eef-4629-b515-0c78ce5119d1___FAM_B.Msls 4283.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0e944041-c132-49cb-bd8c-0224c0f06cad___FAM_B.Msls 1241.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0e944041-c132-49cb-bd8c-0224c0f06cad___FAM_B.Msls 1241.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/0efbc06a-3f10-4a56-bd7d-a8a9d0e66be2___FAM_B.Msls 1874.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/100e782c-741d-4e34-948f-0c2e129a0939___FAM_B.Msls 4161.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/123d0123-f340-4f36-8de4-e9fcaf1a8d17___FAM_B.Msls 0977.JPG, Predicted class: esca, True class: esca
@@ -47,16 +61,16 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/17ce9
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/18281818-c3a8-453b-b5fd-6101853e4aca___FAM_B.Msls 3915.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/192789ae-2941-4906-9020-3fe1058e78df___FAM_B.Msls 4236.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/195d2df2-0618-4683-b7f3-ddb45f30d8e4___FAM_B.Msls 0857_flipLR.JPG, Predicted class: non-esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1a450cce-95a7-4b1e-a641-95b4d50a1acc___FAM_B.Msls 1747.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1a450cce-95a7-4b1e-a641-95b4d50a1acc___FAM_B.Msls 1747.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1a477ab0-0649-48d4-bbbf-fa3600d9ec03___FAM_B.Msls 1347.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1a605788-78ec-4d62-9f87-3ad62309d58f___FAM_B.Msls 4371.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1aeac161-7472-4d64-bd17-da030db1fdcb___FAM_B.Msls 1137.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1b8b4037-44c0-4609-9cff-929955889d37___FAM_B.Msls 1164.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1c47bebb-90ac-4161-8716-78b3475cddea___FAM_B.Msls 1283.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1c47bebb-90ac-4161-8716-78b3475cddea___FAM_B.Msls 1283.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1e094cfe-006b-456f-9d19-151c85e281e3___FAM_B.Msls 4012.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1e2d5b85-9d5c-4799-8030-1e3d6bebbfe9___FAM_B.Msls 3874.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1f63e823-9232-43bd-8e06-70db7d8bb468___FAM_B.Msls 1166.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1f8270ac-8016-457e-8e81-bca5bbcaa784___FAM_B.Msls 1338.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1f8270ac-8016-457e-8e81-bca5bbcaa784___FAM_B.Msls 1338.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/1fe6c16c-b50b-40ce-92ca-40b92a88696e___FAM_B.Msls 4455.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2058103c-82a0-49ef-9b88-68ff282de479___FAM_B.Msls 3909.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/20ab9746-0822-4b1b-9785-759d35ffff95___FAM_B.Msls 1829_flipLR.JPG, Predicted class: esca, True class: esca
@@ -89,8 +103,8 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2aa53
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2bf35b46-3681-4bd2-8491-264ec0fe0e9f___FAM_B.Msls 1050.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2c59c3a9-8bef-4c24-99be-2bb3563b8171___FAM_B.Msls 1178.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2e0db792-fc3b-4444-8bdf-6b0db024c067___FAM_B.Msls 4337.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2f97ddbd-4543-4229-8028-9ddfc88bf831___FAM_B.Msls 1226.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2ffcdbee-105e-4c6e-801f-fd6475e4aaa0___FAM_B.Msls 4358.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2f97ddbd-4543-4229-8028-9ddfc88bf831___FAM_B.Msls 1226.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/2ffcdbee-105e-4c6e-801f-fd6475e4aaa0___FAM_B.Msls 4358.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/308affeb-3413-4002-ae48-d76f67c762e6___FAM_B.Msls 0879.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/308affeb-3413-4002-ae48-d76f67c762e6___FAM_B.Msls 0879_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/30c135e6-4806-4b6f-8e2f-1474725795fb___FAM_B.Msls 4275_flipLR.JPG, Predicted class: esca, True class: esca
@@ -107,7 +121,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3520b
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3573f44b-23da-4c38-8cc5-bb7bee57d598___FAM_B.Msls 3881_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/36081cac-3173-421f-89d8-73211d2473f7___FAM_B.Msls 4142_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3692de72-4d2c-4cef-989f-ae082459ed19___FAM_B.Msls 1210_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/36a8ecb2-659c-4b9c-92c8-4c0b883a7b91___FAM_B.Msls 1109.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/36a8ecb2-659c-4b9c-92c8-4c0b883a7b91___FAM_B.Msls 1109.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/37150e29-46d5-45e7-9b92-5986eafc5a90___FAM_B.Msls 1142_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/37cd82db-7b14-4691-a96b-3b94fdd24689___FAM_B.Msls 3983.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/37cd82db-7b14-4691-a96b-3b94fdd24689___FAM_B.Msls 3983_flipLR.JPG, Predicted class: esca, True class: esca
@@ -120,7 +134,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3b707
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3b8f1006-2bc9-429e-8120-d697632c6642___FAM_B.Msls 3960.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3c4c6822-92f2-44cf-b1bc-503ec376213d___FAM_B.Msls 4385.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3e39d83d-d0e4-4b23-8823-30ea2c216aff___FAM_B.Msls 4149.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3e51515a-b053-40b7-a967-dd718bb4bab5___FAM_B.Msls 3809.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3e51515a-b053-40b7-a967-dd718bb4bab5___FAM_B.Msls 3809.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3e5c673a-dc32-40d7-a226-900b8cefccd9___FAM_B.Msls 3849.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3ede11c5-3bef-4c32-b6bd-4ccf9b574977___FAM_B.Msls 4294.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/3f06866f-ed47-4fc9-9a39-9eca51953d3d___FAM_B.Msls 1781.JPG, Predicted class: esca, True class: esca
@@ -159,9 +173,9 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/516e4
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/516e48d7-37c1-4c21-8ac8-d0a1659bbdde___FAM_B.Msls 0979_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/525e71ef-1ceb-40b8-85dd-96a280508181___FAM_B.Msls 1263.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/528cda88-683f-4fe6-b039-fba2fc93add7___FAM_B.Msls 0830_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/52b669f8-973d-446c-bfad-53d47760d8cb___FAM_B.Msls 4047_flipLR.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/52b669f8-973d-446c-bfad-53d47760d8cb___FAM_B.Msls 4047_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/5309771c-b262-437f-9f79-f02f3bcd979c___FAM_B.Msls 3895.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/53285595-ccc0-4d33-a244-246b4e06a56c___FAM_B.Msls 1867_flipLR.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/53285595-ccc0-4d33-a244-246b4e06a56c___FAM_B.Msls 1867_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/54cb3c07-3272-4133-b303-7d401c21dbd7___FAM_B.Msls 4475.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/551a1310-87e2-4a9e-a513-ce8c7193d0bd___FAM_B.Msls 1114_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/553774cb-4861-4eb0-b019-b26cd7013aa1___FAM_B.Msls 1132_flipLR.JPG, Predicted class: esca, True class: esca
@@ -182,12 +196,12 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/61cfe
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/61f9f562-a64b-4e80-82d6-1babe2cf1fa1___FAM_B.Msls 4229_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/62de1922-3c4f-4d1f-af8b-ccc7f0096a03___FAM_B.Msls 1786_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/630ccfb4-cc9e-483d-849f-44e39c209200___FAM_B.Msls 4310.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/63f3535c-0927-442e-a4ee-ffce62296cb9___FAM_B.Msls 3811.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/63f3535c-0927-442e-a4ee-ffce62296cb9___FAM_B.Msls 3811.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6403257e-bb41-435a-b504-172008b08625___FAM_B.Msls 1064_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6523a2d2-c464-47ba-8e3e-277174a61e97___FAM_B.Msls 3820.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6523a2d2-c464-47ba-8e3e-277174a61e97___FAM_B.Msls 3820_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/65d87861-592e-4bfb-bfa6-67374084a8eb___FAM_B.Msls 1281_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6613b6b4-99c0-4e52-9dd2-317646885c87___FAM_B.Msls 1774_flipLR.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6613b6b4-99c0-4e52-9dd2-317646885c87___FAM_B.Msls 1774_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/661e6913-9c64-4f2f-a1f3-67cb7b2c4eeb___FAM_B.Msls 4102.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6625dd3f-65b7-4eff-a24a-3e964fc793a1___FAM_B.Msls 1304_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/66aff794-a2db-4cc2-a5d2-f78c6e10ef73___FAM_B.Msls 4086_flipLR.JPG, Predicted class: esca, True class: esca
@@ -205,7 +219,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6b43a
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6dde4150-9c70-4d59-87b7-e1bc8fe0a7ad___FAM_B.Msls 1081.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6e619e8f-46ff-4f29-bb61-8c493a9f734f___FAM_B.Msls 4070.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6efee67c-958d-49bf-9482-e7466ca092c2___FAM_B.Msls 1014.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6f4e3e0f-9e84-451e-b3aa-61e665ef49b6___FAM_B.Msls 3951.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/6f4e3e0f-9e84-451e-b3aa-61e665ef49b6___FAM_B.Msls 3951.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/70fed7a8-65fc-475a-9459-752e8f98556e___FAM_B.Msls 1177.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/70fed7a8-65fc-475a-9459-752e8f98556e___FAM_B.Msls 1177_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7112eab8-38fb-4fae-b00f-aa6006a3e67a___FAM_B.Msls 3794.JPG, Predicted class: esca, True class: esca
@@ -220,21 +234,21 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/76d69
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/775225fd-1aa2-4791-b0e1-c4173c1ec949___FAM_B.Msls 3802_flipLR.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7772b9d9-34d8-46e5-9048-ce418540bfd8___FAM_B.Msls 1323.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/784c3d5c-d580-4274-96c6-b8d197267088___FAM_B.Msls 0973_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/78a4dcba-2aa4-4897-a652-362ece64a5cc___FAM_B.Msls 3805_flipLR.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/78a4dcba-2aa4-4897-a652-362ece64a5cc___FAM_B.Msls 3805_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/79ba6196-f5fb-4926-a489-88be7cf07a96___FAM_B.Msls 1089_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/79e261e6-ab89-4675-973c-bf55a6843e35___FAM_B.Msls 4335.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7ae3e5e6-397e-4740-a5f5-f3043a093231___FAM_B.Msls 4029.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7ae8ced4-403d-402f-8035-1efa30ed9b2a___FAM_B.Msls 1797.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7e50ddbb-6454-46ba-9c6d-c8b01f7d288e___FAM_B.Msls 1083.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7f79ffe2-6ec7-4fed-bdd0-e9d509fe73fc___FAM_B.Msls 4493.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7fbf9f73-32a7-4f60-b22f-284f6a96c176___FAM_B.Msls 0950.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7f79ffe2-6ec7-4fed-bdd0-e9d509fe73fc___FAM_B.Msls 4493.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7fbf9f73-32a7-4f60-b22f-284f6a96c176___FAM_B.Msls 0950.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/7fe21d4e-ab67-41bb-ad67-b668f535c7cf___FAM_B.Msls 1202.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/80300739-9967-4a4e-8088-9e7ae84fc7b4___FAM_B.Msls 4122_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/803231c8-5b48-4a7e-930a-134141e2075f___FAM_B.Msls 1257.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/8046e554-2d9c-46bd-8d2c-07217a7fe8b8___FAM_B.Msls 1282.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/80a4fbe3-a0ee-4dc2-ada9-18f988fa3dcf___FAM_B.Msls 3866.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/820d1902-2893-4c08-b810-467daf17209f___FAM_B.Msls 4014_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/82be01ff-9e82-428c-b623-95df7ed11f77___FAM_B.Msls 1880.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/82be01ff-9e82-428c-b623-95df7ed11f77___FAM_B.Msls 1880.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/83691e0b-04e0-4a8f-bf76-0924614c4ce6___FAM_B.Msls 0943_flipLR.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/83d8dcc2-a2ad-4b3c-beee-044c02c7c197___FAM_B.Msls 4472_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/8442f102-0b5b-479f-8a6e-491b2e906d11___FAM_B.Msls 3863.JPG, Predicted class: esca, True class: esca
@@ -289,7 +303,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/a8a0b
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/a937a241-8f93-457f-a937-c90bf974f40e___FAM_B.Msls 0980_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ab311649-286e-45bd-90c8-85d5b89ff2a0___FAM_B.Msls 0910_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ab53a148-3a2c-4f4f-94df-e484d7daa29c___FAM_B.Msls 1847.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ab84accf-1cc9-42af-96cb-28cfd4aebc33___FAM_B.Msls 4127_flipLR.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ab84accf-1cc9-42af-96cb-28cfd4aebc33___FAM_B.Msls 4127_flipLR.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ab8a8cb6-8fd5-4bb4-934a-a37dabacd13b___FAM_B.Msls 1877_flipLR.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ad3b45fa-50b9-4abb-9e24-bcbbcb0f33d3___FAM_B.Msls 4419.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ada4cd43-07d6-4ccb-9cb9-3b1440cdbd06___FAM_B.Msls 4220_flipLR.JPG, Predicted class: esca, True class: esca
@@ -303,10 +317,10 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b4783
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b4791957-cbc5-4363-87ca-741c9ff1db5d___FAM_B.Msls 1163.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b4b43ac8-f6d6-4ece-8a7b-0991927992b8___FAM_B.Msls 1077.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b4b43ac8-f6d6-4ece-8a7b-0991927992b8___FAM_B.Msls 1077_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b51dd9b6-0ab4-411f-ad41-a1549b3ae488___FAM_B.Msls 3839.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b51dd9b6-0ab4-411f-ad41-a1549b3ae488___FAM_B.Msls 3839.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b56821a5-ba37-4072-9889-53396a3d780e___FAM_B.Msls 3921.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b5aab138-11f7-4f77-8a41-0f8f06048654___FAM_B.Msls 3801.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b5cd7194-ba06-4fd5-a24c-4c384f49e65b___FAM_B.Msls 4232.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b5cd7194-ba06-4fd5-a24c-4c384f49e65b___FAM_B.Msls 4232.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b6f9d1c9-f433-41d6-bdee-0e3cf5e80791___FAM_B.Msls 1235_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b73462d3-e595-4cbe-93ec-5c755a0de73d___FAM_B.Msls 0945.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b73b2d3a-bc1f-4ef1-b5b3-1bd48076b8ba___FAM_B.Msls 1098.JPG, Predicted class: esca, True class: esca
@@ -317,7 +331,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b92ed
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/b94e34f0-ace5-454c-9fe2-c64d06837a4c___FAM_B.Msls 4117_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ba2b24ba-0752-415c-bb3e-0faa772c267c___FAM_B.Msls 4168.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/bb2d9f66-4291-4815-beb5-869980de832b___FAM_B.Msls 4205.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/bbb39299-3ffb-4e3b-9e6b-ba5a869eef78___FAM_B.Msls 1253_flipLR.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/bbb39299-3ffb-4e3b-9e6b-ba5a869eef78___FAM_B.Msls 1253_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/bc99eee4-c8a1-40bb-b98b-315294fbd34e___FAM_B.Msls 3867.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/bccb4e55-38e7-4162-81d2-a44045ead579___FAM_B.Msls 0881.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/bd2b90ce-dd82-4819-91ec-4dea2a08f696___FAM_B.Msls 4125.JPG, Predicted class: esca, True class: esca
@@ -349,7 +363,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c3b5b
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c3fda479-ca4d-482f-b0a7-ac4ff57dcbac___FAM_B.Msls 4255.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c449f5bb-9b5e-40f9-925e-63305a6f8c3f___FAM_B.Msls 1091_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c4825035-f919-4e75-81ae-383e8bc239f0___FAM_B.Msls 1785.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c4e73355-304e-482e-8e3a-b5d3143d6eda___FAM_B.Msls 3953_flipLR.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c4e73355-304e-482e-8e3a-b5d3143d6eda___FAM_B.Msls 3953_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c5caa15c-6bd9-4a1e-b54f-0f944ef39611___FAM_B.Msls 1003.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c65bf67d-61a9-43ef-b218-ea0a383ffc96___FAM_B.Msls 4313.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c6701b18-c9ab-4a72-9956-e0c492d58550___FAM_B.Msls 1232_flipLR.JPG, Predicted class: esca, True class: esca
@@ -362,7 +376,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c97f1
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/c9ab1e1c-625e-4d4c-8b64-9eee0d34430a___FAM_B.Msls 4453_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ca034c1e-45f0-471f-9067-4f65b3d16dd8___FAM_B.Msls 0913_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ca2e1a39-3d21-4400-b11c-f4221e46e957___FAM_B.Msls 4401.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ca4d94a7-69b0-422e-854f-a72166418d2a___FAM_B.Msls 0933.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/ca4d94a7-69b0-422e-854f-a72166418d2a___FAM_B.Msls 0933.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/caa6437a-abf9-4670-ba69-8c72f93bcf53___FAM_B.Msls 4341.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/caca5eaa-96b1-4fd5-8891-14e3edd34e10___FAM_B.Msls 1735.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/cc0cffcf-3a33-4ba5-a4b8-6b5a4dfc4689___FAM_B.Msls 4380_flipLR.JPG, Predicted class: esca, True class: esca
@@ -383,8 +397,8 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d1867
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d1867d3e-ddbb-4d52-8aa1-1ce40181cb67___FAM_B.Msls 3810_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d1a800a5-1bf5-43b8-ae8d-8b43b9b3c3a5___FAM_B.Msls 1182_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d1c14c9d-d5d7-466d-9b86-d7603b981c08___FAM_B.Msls 4123_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d235c093-08ec-48ab-87b0-0852d878e920___FAM_B.Msls 1244.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d23d29ef-a8c6-471e-bbe1-7ab6608c214d___FAM_B.Msls 1173_flipLR.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d235c093-08ec-48ab-87b0-0852d878e920___FAM_B.Msls 1244.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d23d29ef-a8c6-471e-bbe1-7ab6608c214d___FAM_B.Msls 1173_flipLR.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d273a13d-30cd-4743-95cc-676e05650aed___FAM_B.Msls 4140.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d30c83d7-b554-48e7-9c50-d7d844b409d4___FAM_B.Msls 4005_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d319e1ba-2c4d-4c50-a9b3-f0e865da72fe___FAM_B.Msls 0880_flipLR.JPG, Predicted class: non-esca, True class: esca
@@ -392,7 +406,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d35a8
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d43c270a-52a6-4691-9d71-cb07881b4f44___FAM_B.Msls 1778_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d49a6797-db17-4312-a00f-043fbbd28651___FAM_B.Msls 0998_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d55a2dd9-d6c3-4a49-8cb7-9fbbc9c51089___FAM_B.Msls 1309.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d55d8e3d-8a4d-4260-b74e-42a337afc382___FAM_B.Msls 1192.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d55d8e3d-8a4d-4260-b74e-42a337afc382___FAM_B.Msls 1192.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d59bea04-30f0-41fe-ab07-e377815816c3___FAM_B.Msls 4018_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d653eb61-32df-4c7b-8acc-8dc8225c49cf___FAM_B.Msls 4387_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/d668a7a0-9a00-4064-8a3b-a484f552a427___FAM_B.Msls 1318_flipLR.JPG, Predicted class: esca, True class: esca
@@ -414,7 +428,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/db7b8
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/dc2b8377-2096-44c3-a195-88a49b8b4e41___FAM_B.Msls 3848.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/dce37f12-02c9-4bbd-a140-3410df07724b___FAM_B.Msls 1354.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/dce37f12-02c9-4bbd-a140-3410df07724b___FAM_B.Msls 1354_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/dd342e05-90cd-4bb6-af98-909b22929d4c___FAM_B.Msls 1245_flipLR.JPG, Predicted class: esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/dd342e05-90cd-4bb6-af98-909b22929d4c___FAM_B.Msls 1245_flipLR.JPG, Predicted class: non-esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/dd48c60e-0d52-41c3-b1a9-9fe110afcb78___FAM_B.Msls 1207.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/de2d98eb-2161-4bf2-9a0b-b8ca4b99667b___FAM_B.Msls 1793.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/de2d98eb-2161-4bf2-9a0b-b8ca4b99667b___FAM_B.Msls 1793_flipLR.JPG, Predicted class: esca, True class: esca
@@ -463,7 +477,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f01d8
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f01e86f9-3c8c-4b55-985f-1025083cd59f___FAM_B.Msls 4326_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f05eb083-7d59-40e6-9426-f06d428e81ab___FAM_B.Msls 1832_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f0af2e5b-1a86-45b9-b731-0332dfd14385___FAM_B.Msls 1117_flipLR.JPG, Predicted class: esca, True class: esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f14f2685-988b-4f16-bb93-b6ba0bf511d4___FAM_B.Msls 1107.JPG, Predicted class: non-esca, True class: esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f14f2685-988b-4f16-bb93-b6ba0bf511d4___FAM_B.Msls 1107.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f161a964-b3a9-45d7-a9b7-124dc3224438___FAM_B.Msls 4084.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f16c2e0b-32ff-4cf3-aefc-a3f71b13cd05___FAM_B.Msls 4002_flipLR.JPG, Predicted class: esca, True class: esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/esca/f16c6e21-179e-4c4f-b23e-e7c7bd31815e___FAM_B.Msls 1301_flipLR.JPG, Predicted class: esca, True class: esca
@@ -500,7 +514,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/00
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/0093ee81-2439-414c-bfb5-a5b6cd6aea72___FAM_B.Rot 3429_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/00e00912-bf75-4cf8-8b7d-ad64b73bea5f___Mt.N.V_HL 6067_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/02a1df6c-97ec-41d4-b00c-9510741a39dc___FAM_B.Rot 0552_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/02a1df6c-97ec-41d4-b00c-9510741a39dc___FAM_B.Rot 0552_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/02e135dd-a02e-40a5-a049-4b5fa978445c___FAM_B.Rot 3063_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/02f95acb-5d92-4f2a-b7ec-3af8709ee7c9___Mt.N.V_HL 9078_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/03027791-26bb-4c46-960e-8df76e27042c___Mt.N.V_HL 6070_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -508,7 +522,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/03
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/03492a0d-6ad7-42ec-a742-c2f1fa59499a___Mt.N.V_HL 6035_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/03492a0d-6ad7-42ec-a742-c2f1fa59499a___Mt.N.V_HL 6035_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/03a8e589-18ca-4596-8db7-ff1efe9b3b05___FAM_B.Rot 0755.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/0434878b-1f52-496a-87c6-58647824ee2d___FAM_B.Rot 5035.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/0434878b-1f52-496a-87c6-58647824ee2d___FAM_B.Rot 5035.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/043920d3-0542-4bd7-a8e5-3807c04a5bdc___FAM_L.Blight 1461.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/04416a29-13a7-49a0-9ab3-f2725ca7b671___FAM_L.Blight 1481_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/04bd87b8-f596-4ccc-a9c9-6af129535edc___FAM_B.Rot 0578.JPG, Predicted class: non-esca, True class: non-esca
@@ -529,7 +543,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/07
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/0771072b-cb0a-4ce9-b18a-cb9c654355e5___FAM_L.Blight 3752.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/0771072b-cb0a-4ce9-b18a-cb9c654355e5___FAM_L.Blight 3752_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/07c7232b-5cdb-4bab-9413-e0108a48526f___Mt.N.V_HL 8957_180deg.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/07d28aaf-09ea-4223-9a65-88ef49e54924___Mt.N.V_HL 9121_90deg.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/07d28aaf-09ea-4223-9a65-88ef49e54924___Mt.N.V_HL 9121_90deg.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/07e911cc-751d-4e1e-ada5-2c363938b213___FAM_B.Rot 3619_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/080bc705-65e6-4dbb-82b7-61925c2cd917___FAM_L.Blight 1416_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/08a7300a-1e67-4441-9521-9168d47cd665___FAM_B.Rot 3020_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -681,7 +695,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/25
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/2541dbf5-a9ef-4822-9d47-409bf36d988f___FAM_B.Rot 0634_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/25e2f7a4-cf4a-4d22-8c97-46292ae6d475___FAM_L.Blight 4791.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/26164e5c-d4d9-469c-a182-e43a7acf843e___FAM_B.Rot 3053.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/2691980c-7324-49e2-85b3-dbfa0a283f2a___Mt.N.V_HL 9019.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/2691980c-7324-49e2-85b3-dbfa0a283f2a___Mt.N.V_HL 9019.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/2691980c-7324-49e2-85b3-dbfa0a283f2a___Mt.N.V_HL 9019_180deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/2691980c-7324-49e2-85b3-dbfa0a283f2a___Mt.N.V_HL 9019_270deg.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/2691980c-7324-49e2-85b3-dbfa0a283f2a___Mt.N.V_HL 9019_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -770,7 +784,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/36
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/37556529-d885-49b1-a6dd-7250fdc34592___FAM_B.Rot 3618.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/381604e3-d429-48e2-86ef-6c325f4d5448___FAM_L.Blight 4522.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/381604e3-d429-48e2-86ef-6c325f4d5448___FAM_L.Blight 4522_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/386f8bff-7dbb-42db-80f7-fc36fc226a97___Mt.N.V_HL 8981.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/386f8bff-7dbb-42db-80f7-fc36fc226a97___Mt.N.V_HL 8981.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/386f8bff-7dbb-42db-80f7-fc36fc226a97___Mt.N.V_HL 8981_270deg.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/38807a6c-d78b-44b0-9b38-f03014ded1ab___FAM_L.Blight 4677.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/389058a6-634c-4cdb-a17c-8385b36dacd9___Mt.N.V_HL 6030_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -778,7 +792,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/38
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/38c1021c-5941-4106-88f0-973de55bfe59___FAM_B.Rot 3367.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/38cc6a0d-cc68-4663-921f-8ed4ba0bd587___FAM_B.Rot 3192_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/38f5aaf4-d1c2-496f-b122-d2a0634d5290___FAM_L.Blight 4971_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/39016e16-a571-46db-8dd9-7c3c165b1f5d___Mt.N.V_HL 8985_180deg.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/39016e16-a571-46db-8dd9-7c3c165b1f5d___Mt.N.V_HL 8985_180deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/394d4600-121b-4ecb-9c34-c70f8e3e0377___Mt.N.V_HL 9047_180deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/394d4600-121b-4ecb-9c34-c70f8e3e0377___Mt.N.V_HL 9047_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3962567b-b8da-4d1f-bfbe-8ba8adb53795___FAM_B.Rot 0416.JPG, Predicted class: non-esca, True class: non-esca
@@ -790,7 +804,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3a
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3a78c29d-db29-4d2e-af06-34a9ba025d60___FAM_L.Blight 1479.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3a78c29d-db29-4d2e-af06-34a9ba025d60___FAM_L.Blight 1479_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3a864d40-54f3-493c-9b05-4b0205dd7c82___FAM_L.Blight 1620.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3ad4f4cb-a4bf-4501-b352-cc3dfcf07afb___FAM_B.Rot 3220.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3ad4f4cb-a4bf-4501-b352-cc3dfcf07afb___FAM_B.Rot 3220.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3b31ce15-2e27-4d3c-acff-bb2f72204048___FAM_L.Blight 1522_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3b4326e8-734a-4f55-80b4-284e86d9c7c9___FAM_B.Rot 0332.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/3b4326e8-734a-4f55-80b4-284e86d9c7c9___FAM_B.Rot 0332_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -849,7 +863,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/43
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/44906155-2446-487e-8531-6c0d98e751dc___Mt.N.V_HL 8992_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/450588a9-80f0-4fc7-85a2-7dd3f17ab26b___FAM_L.Blight 0795.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/452823c1-22d2-4bce-a4cc-8ad014421261___Mt.N.V_HL 6199_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/458d2f09-f646-42e6-ac1f-0aa5e123c127___FAM_B.Rot 0583.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/458d2f09-f646-42e6-ac1f-0aa5e123c127___FAM_B.Rot 0583.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4597e55d-b339-4598-b1d0-63f001748aab___FAM_L.Blight 1693.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/47682bea-7eb6-4c69-8833-e0d43f2a64ad___FAM_B.Rot 0718_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4791dabf-156e-4f0f-b922-f2c7f25d5102___FAM_B.Rot 0500.JPG, Predicted class: non-esca, True class: non-esca
@@ -860,7 +874,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/49
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/493fb6d4-ab6e-4e65-b365-d9c37c817e0b___FAM_B.Rot 3516.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/49dab82f-35b3-486d-94c6-cd856b44a19a___FAM_L.Blight 4812.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4a0e8241-b8c4-4e01-ab1b-7b8ff77f4b6f___FAM_B.Rot 3118.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4a0e8241-b8c4-4e01-ab1b-7b8ff77f4b6f___FAM_B.Rot 3118_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4a0e8241-b8c4-4e01-ab1b-7b8ff77f4b6f___FAM_B.Rot 3118_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4a2e44c5-aa80-4052-bc4a-5d6324ae5f3e___Mt.N.V_HL 6207_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4a31039d-54b1-4a0f-bc5f-2032f94c27af___Mt.N.V_HL 9040_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/4a5af5eb-d8ab-4167-b8f9-26f9e0b03e5e___FAM_L.Blight 3714.JPG, Predicted class: non-esca, True class: non-esca
@@ -925,7 +939,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/54
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/556574c6-b0e1-46ca-acc9-4af99ef1eb87___FAM_L.Blight 4593_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/556c242a-d3cc-4bde-bc93-6c8a33e43634___FAM_L.Blight 3783_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/55740c50-995e-4bd4-84a1-d73475041d43___FAM_B.Rot 0522.JPG, Predicted class: esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/55740c50-995e-4bd4-84a1-d73475041d43___FAM_B.Rot 0522_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/55740c50-995e-4bd4-84a1-d73475041d43___FAM_B.Rot 0522_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/558106fb-2755-4fe0-8bd4-d09f431bfbe1___FAM_L.Blight 1375_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/55afb57b-04f7-437c-92ae-d2b859de5fc1___Mt.N.V_HL 8974_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/55ca1160-9110-416a-b35d-934c94037269___FAM_B.Rot 3484.JPG, Predicted class: non-esca, True class: non-esca
@@ -1026,7 +1040,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/65
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/662bff5d-6113-4081-9505-ec31cb1d36eb___FAM_L.Blight 3747.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/666536ee-371f-46c2-b20d-f6fc87847cb1___Mt.N.V_HL 8944_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6679c348-59cb-4732-8ae3-928451bf4b13___FAM_L.Blight 4715_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/66f6bb0c-ff8d-42a4-a3cd-e0a23ab02761___FAM_B.Rot 0405_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/66f6bb0c-ff8d-42a4-a3cd-e0a23ab02761___FAM_B.Rot 0405_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/670313f0-b36a-4151-9d81-ae1cd9ee812c___Mt.N.V_HL 6092_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/67dccc3a-0d41-49ee-a4f8-70cc9428443c___FAM_B.Rot 3370_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/67ff16de-a779-41fd-ade4-ce3001dee82a___FAM_L.Blight 1729.JPG, Predicted class: non-esca, True class: non-esca
@@ -1074,7 +1088,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6e
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f133cb4-b5c3-4f41-a22d-59fb7ec591f0___FAM_L.Blight 4545_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f1cda60-ba09-4c3e-a54a-3f08cfd15d1e___Mt.N.V_HL 8975_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f341942-20d0-4fee-acee-0d0d8cf76a96___FAM_L.Blight 4609.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f47e933-57e2-4361-8dc2-1f85f7c231dc___FAM_B.Rot 3415_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f47e933-57e2-4361-8dc2-1f85f7c231dc___FAM_B.Rot 3415_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f573af5-b10a-44b2-8409-93955d36d525___FAM_L.Blight 4867_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6f771370-1fb8-440e-a23f-4e0f29dbd65b___Mt.N.V_HL 6150_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/6fad4de0-54bf-4869-80ac-d290bd7d0da8___FAM_L.Blight 1432_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -1102,8 +1116,8 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/73
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/73391930-644d-4cee-89cc-cb9c6adf1b4c___Mt.N.V_HL 9036_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/746bd127-28d3-4392-86bb-0bbc9db50478___FAM_L.Blight 4558_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/749381a1-3499-448d-acd2-c9bf4c158037___FAM_B.Rot 2998_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/74a188bf-3523-4e1e-a373-3449b758f18a___FAM_B.Rot 5095.JPG, Predicted class: esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/754848b2-b26c-4935-aa25-3dc9a5627fb3___FAM_B.Rot 3418_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/74a188bf-3523-4e1e-a373-3449b758f18a___FAM_B.Rot 5095.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/754848b2-b26c-4935-aa25-3dc9a5627fb3___FAM_B.Rot 3418_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/755c30c1-da9c-4c9f-ac99-ad27791e0a47___FAM_L.Blight 4819_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/756bd990-15bf-447e-9e3d-3d597509a79d___FAM_L.Blight 4605.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/75f1babe-5d93-4a37-9878-8d3846054ed7___Mt.N.V_HL 9030_270deg.JPG, Predicted class: non-esca, True class: non-esca
@@ -1120,7 +1134,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/78
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/791fbbb4-087e-4a00-9694-de48028f8d1f___FAM_L.Blight 4724_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/793613df-550e-4ad9-9389-d9b8b4752703___FAM_L.Blight 4980_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/793f26c8-77cd-4134-939f-655a290e7e6c___Mt.N.V_HL 8925_90deg.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/794d2785-70e5-4fb2-a44b-ceeae69a048f___FAM_B.Rot 5085.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/794d2785-70e5-4fb2-a44b-ceeae69a048f___FAM_B.Rot 5085.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/796d96a4-6f82-424d-acb7-cc27012c4ebd___FAM_B.Rot 3143.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/7994b175-d5f2-42a4-95e1-098e957766e6___FAM_B.Rot 0424.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/79c5e347-c985-4a15-9e6c-62fef1e5792b___FAM_L.Blight 4562_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -1163,7 +1177,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/81
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/812679f9-a993-4045-a305-01fbf48e65ff___Mt.N.V_HL 6203_180deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/81a95f20-95d6-44d9-8574-f2be59f2aa86___FAM_B.Rot 3617.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/81a95f20-95d6-44d9-8574-f2be59f2aa86___FAM_B.Rot 3617_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/81bc31a1-d426-41a5-985b-a16e5ee67fd2___FAM_B.Rot 0533.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/81bc31a1-d426-41a5-985b-a16e5ee67fd2___FAM_B.Rot 0533.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/81c43511-4903-46db-9022-38c756418f34___Mt.N.V_HL 9124_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/822016d4-dd11-4aa1-9cc0-5546c38d20e2___FAM_L.Blight 4507_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8243e3f5-4864-4944-956c-9fdcab4b18ef___FAM_L.Blight 1548.JPG, Predicted class: non-esca, True class: non-esca
@@ -1188,7 +1202,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/85
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/85604599-9409-4a23-99ee-b08e778a11c2___FAM_B.Rot 3395.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/85604599-9409-4a23-99ee-b08e778a11c2___FAM_B.Rot 3395_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/858899f7-5627-4674-af30-8c4cc7fd5535___FAM_B.Rot 3340.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/85c128f1-a36e-4345-835d-1668fe2d7467___Mt.N.V_HL 9018_180deg.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/85c128f1-a36e-4345-835d-1668fe2d7467___Mt.N.V_HL 9018_180deg.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/85c128f1-a36e-4345-835d-1668fe2d7467___Mt.N.V_HL 9018_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/86192071-649f-475a-9c25-968bbd2c0770___FAM_B.Rot 3003.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/862c537a-d751-47bd-9c2c-385f7e9a9e97___Mt.N.V_HL 6054_180deg.JPG, Predicted class: non-esca, True class: non-esca
@@ -1217,7 +1231,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8b
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8b8654fb-cbc0-4761-9d86-1982c9fe1609___Mt.N.V_HL 8962_180deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8bc229a3-e9bd-4691-a50f-d26cda2f06c2___FAM_B.Rot 0326.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8c2374fd-2ad8-4f94-8634-9adfc9933444___FAM_B.Rot 0543.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8c3b791e-e2e5-4f3b-8183-610458658926___Mt.N.V_HL 8982.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8c3b791e-e2e5-4f3b-8183-610458658926___Mt.N.V_HL 8982.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8c555cf5-c6c8-400c-a764-a1b2ed7e66cd___FAM_L.Blight 1576.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8c8ddeba-8c03-47ea-8551-c2730890548f___FAM_B.Rot 3399.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/8c8e729b-1cd0-464c-8ff7-aa3f1403e163___FAM_L.Blight 1555_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -1291,7 +1305,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/99
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9a011731-ddca-45c9-929a-666bd7b85515___FAM_L.Blight 1527_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9a03ec52-8f54-4a8b-9a4b-e6ca129f11c1___FAM_B.Rot 0700.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9a65f651-1b87-4580-b00e-41fe31f950f4___FAM_B.Rot 5055_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9aad4625-a52d-4a3d-839f-aedd88c2f300___FAM_B.Rot 0521.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9aad4625-a52d-4a3d-839f-aedd88c2f300___FAM_B.Rot 0521.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9ad9a56b-ab99-4373-8aea-e8eca129c7c3___FAM_L.Blight 0808.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9ad9a56b-ab99-4373-8aea-e8eca129c7c3___FAM_L.Blight 0808_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/9ae7351b-f18a-4075-b94f-be8795dce75a___FAM_B.Rot 5067.JPG, Predicted class: non-esca, True class: non-esca
@@ -1385,7 +1399,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ac
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ac051205-5c7e-4aa4-b2bd-393272c807cd___FAM_B.Rot 0676.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ac50f487-970b-4076-a0fd-126f65066bec___FAM_L.Blight 4923.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/aca0406e-c5ec-421e-a265-3d88d13b3bef___Mt.N.V_HL 6182_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/acd52f9e-f2d8-4557-aee7-12ad67aef2d6___FAM_B.Rot 3028_flipLR.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/acd52f9e-f2d8-4557-aee7-12ad67aef2d6___FAM_B.Rot 3028_flipLR.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ad0a8ced-f3b0-4c21-8ec6-658bcfe9fa2a___Mt.N.V_HL 9034_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ad364b4a-8e64-4e9a-9e9e-9e535774a9d1___FAM_B.Rot 3064.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/adb53928-3906-45ec-a017-025fba3c775b___Mt.N.V_HL 6184_180deg.JPG, Predicted class: non-esca, True class: non-esca
@@ -1529,7 +1543,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c6
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c6de9597-8f56-45bf-b67f-b7ebd7e25d2e___FAM_B.Rot 3197_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c7b7d7a8-fb2b-4149-b2c8-83ee2b9a7ead___FAM_B.Rot 0746.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c7eee9a0-9a46-448f-a59a-9385132c979b___Mt.N.V_HL 9075_180deg.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c7eee9a0-9a46-448f-a59a-9385132c979b___Mt.N.V_HL 9075_270deg.JPG, Predicted class: non-esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c7eee9a0-9a46-448f-a59a-9385132c979b___Mt.N.V_HL 9075_270deg.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c801581b-6e85-4c4e-8d0a-b9a87299a8f6___FAM_L.Blight 4660_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c813333e-eed5-4934-8e83-39ffd9a52d3f___FAM_B.Rot 0371.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/c839e134-6692-4065-8e12-7ea01adcc794___Mt.N.V_HL 9014_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -1623,7 +1637,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/d9
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/d966ee8e-abdc-4841-94a5-ae1bed9da16c___Mt.N.V_HL 9094_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/d9ceadb2-ee0d-4628-9249-df238d8d7887___FAM_L.Blight 4670_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/da331356-edd4-4803-9347-412929330c11___Mt.N.V_HL 6142_90deg.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/da4c8837-e28a-485b-b121-67eb8b58b35c___FAM_B.Rot 0672.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/da4c8837-e28a-485b-b121-67eb8b58b35c___FAM_B.Rot 0672.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/da864f35-52f6-44da-8da0-b739e99f4c44___FAM_L.Blight 3770.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/da9513b8-5974-4ccc-8a64-3c6c9047010a___FAM_B.Rot 3541_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/dadd9301-137b-4845-a38b-bade89aef516___FAM_L.Blight 4953.JPG, Predicted class: non-esca, True class: non-esca
@@ -1691,7 +1705,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e6
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e6d82c66-3d9e-4491-a5f7-9c16dd7ce6a0___Mt.N.V_HL 9054_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e6d82c66-3d9e-4491-a5f7-9c16dd7ce6a0___Mt.N.V_HL 9054_90deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e751fc65-f484-4022-9ea8-a4199a8cc67a___FAM_B.Rot 3432_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e7cae881-171d-442c-aa19-04b82b6c055d___FAM_B.Rot 0534.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e7cae881-171d-442c-aa19-04b82b6c055d___FAM_B.Rot 0534.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e7cdb4b7-662a-44d2-8c74-1de45d30b8e4___FAM_B.Rot 3281.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e8015556-3831-4558-a250-00296a0e9995___FAM_L.Blight 4981_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/e82c2836-e9ea-4787-b6c8-81828ed22756___FAM_L.Blight 4934.JPG, Predicted class: non-esca, True class: non-esca
@@ -1719,7 +1733,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ec
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ecf52a0a-9f08-4a06-8718-844e61ba3628___FAM_L.Blight 1688_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ed534915-4d99-4f6b-927d-2ebc57650d9d___FAM_B.Rot 0450.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ed5c8c75-0e44-4f65-b25c-05fb69b16655___FAM_L.Blight 1592_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ed9d7946-b257-4d2f-a42e-9ef02d623985___FAM_B.Rot 0404_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ed9d7946-b257-4d2f-a42e-9ef02d623985___FAM_B.Rot 0404_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/edd4a96a-0194-4e62-b9e5-091c066a004b___FAM_B.Rot 3162.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/edd9b7ce-dc36-4de7-bd53-1a074a07deb3___FAM_L.Blight 4766_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ef1eac6a-c3f0-4620-9ae3-a162b6fca7db___FAM_B.Rot 3597.JPG, Predicted class: non-esca, True class: non-esca
@@ -1728,7 +1742,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ef
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/effe2ed2-5133-4d25-ae1e-7ad8cc37d4f1___FAM_L.Blight 1482_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f00f7ab3-5f23-4088-90e4-c6dcbb08333b___FAM_B.Rot 0588.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f013402b-5de4-43a1-b5e3-f04d1ce11e4d___FAM_L.Blight 1726_flipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f014c5bf-d06a-42c7-8a51-bdfb38c6a815___FAM_B.Rot 0495_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f014c5bf-d06a-42c7-8a51-bdfb38c6a815___FAM_B.Rot 0495_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f06cf30e-e075-4793-bd2f-8e81142e0106___FAM_B.Rot 3165_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f0c35665-e6f4-4b35-affe-df70d10206b9___FAM_B.Rot 3612.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f1803b26-859e-4cfc-9b45-8293f97ecd28___FAM_L.Blight 3726_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -1759,7 +1773,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f4
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f4fbf07a-621f-430d-984a-f8ddc8edf931___FAM_L.Blight 1675.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f5305b02-0f2c-44a4-a572-69a00304687b___FAM_B.Rot 0714_flipLR.JPG, Predicted class: esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f5310751-1f5c-426e-9e50-52bb5b7a2145___Mt.N.V_HL 8950_new30degFlipLR.JPG, Predicted class: non-esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f54d217f-5a0a-4f89-b11e-c13595cb567c___FAM_B.Rot 0487_flipLR.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f54d217f-5a0a-4f89-b11e-c13595cb567c___FAM_B.Rot 0487_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f5bf7627-ca88-4ebb-b3af-e17224b6b6ee___FAM_B.Rot 3041.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f5e750d0-fb66-42e7-8324-ab2cdaa25b53___FAM_B.Rot 0671.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/f6280204-a771-45f8-b217-c69938fbb84f___FAM_B.Rot 3567_flipLR.JPG, Predicted class: non-esca, True class: non-esca
@@ -1796,7 +1810,7 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fa
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fac73f65-5442-4cf7-b1cf-eaabf4704758___FAM_B.Rot 0724_flipLR.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fb12efe4-4fe8-42e3-bd92-27cbd29497a0___FAM_L.Blight 4567.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fb6ca3d8-29bc-4103-b309-82aa6d7b1b0b___FAM_B.Rot 0648_flipLR.JPG, Predicted class: esca, True class: non-esca
-File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fbf08736-4641-4943-a4b5-4f86f9b609cc___FAM_B.Rot 3151.JPG, Predicted class: esca, True class: non-esca
+File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fbf08736-4641-4943-a4b5-4f86f9b609cc___FAM_B.Rot 3151.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fc114047-c698-4bfd-89dd-ce3173aaffd5___FAM_B.Rot 5038.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fc24bccd-6d46-48b8-9dad-99f7bc0e3eec___Mt.N.V_HL 6031.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fc24bccd-6d46-48b8-9dad-99f7bc0e3eec___Mt.N.V_HL 6031_270deg.JPG, Predicted class: non-esca, True class: non-esca
@@ -1819,18 +1833,18 @@ File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/fe
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ff99a93a-ec9b-4a6d-a5e1-1a015cada478___Mt.N.V_HL 9057_180deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ff99a93a-ec9b-4a6d-a5e1-1a015cada478___Mt.N.V_HL 9057_270deg.JPG, Predicted class: non-esca, True class: non-esca
 File: /content/drive/MyDrive/gtprac/original_grape_data/binary_test_2/healthy/ff99a93a-ec9b-4a6d-a5e1-1a015cada478___Mt.N.V_HL 9057_90deg.JPG, Predicted class: non-esca, True class: non-esca
-Ideal threshold: 0.5800000000000001
-Best F1 score at ideal threshold: 0.9044193216855088
+Ideal threshold: 0.78
+Best F1 score at ideal threshold: 0.9296375266524519
 Binary Classification Report (esca vs others):
               precision    recall  f1-score   support
 
-    non-esca       0.97      0.96      0.96      1325
-        esca       0.89      0.92      0.90       480
+    non-esca       0.97      0.98      0.98      1325
+        esca       0.95      0.91      0.93       480
 
-    accuracy                           0.95      1805
-   macro avg       0.93      0.94      0.93      1805
-weighted avg       0.95      0.95      0.95      1805
+    accuracy                           0.96      1805
+   macro avg       0.96      0.95      0.95      1805
+weighted avg       0.96      0.96      0.96      1805
 
 Binary Confusion Matrix (esca vs others):
-[[1272   53]
- [  40  440]]
+[[1303   22]
+ [  44  436]]
