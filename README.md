@@ -46,30 +46,9 @@ The classifier's goal is to identify Esca disease from a leaf image, even when o
 
 ## Model Performance Evaluation
 
-### Classification Report
-
-| Class         | Precision | Recall | F1-Score | Support |
-|---------------|-----------|--------|----------|---------|
-| **esca**      | 0.79      | 0.97   | 0.87     | 480     |
-| **healthy**   | 0.99      | 0.90   | 0.94     | 1325    |
-
-### Explanation of Metrics
-
-- **Precision**: The ratio of true positive predictions to the total predicted positives. Precision indicates how many of the positive predictions were actually correct.
-- **Recall**: The ratio of true positive predictions to the total actual positives. Recall indicates how many of the actual positives were correctly identified.
-- **F1-Score**: The harmonic mean of precision and recall, providing a single metric that balances both concerns.
-- **Support**: The number of actual occurrences of each class in the dataset.
-
 ### Accuracy
 
-The overall accuracy of the classifier is 0.92 (92%), which indicates the ratio of correctly predicted instances to the total instances.
-
-### Confusion Matrix
-
-- **True Positives (TP)**: `esca` correctly identified as `esca`: 468
-- **True Negatives (TN)**: `healthy` correctly identified as `healthy`: 1197
-- **False Positives (FP)**: `healthy` incorrectly identified as `esca`: 12
-- **False Negatives (FN)**: `esca` incorrectly identified as `healthy`: 128
+The overall accuracy of the classifier is 0.97 (97%), which indicates the ratio of correctly predicted instances to the total instances.
 
 ## Detailed Explanation of Model Training Components
 
