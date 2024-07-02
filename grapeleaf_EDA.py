@@ -7,12 +7,10 @@ from skimage.io import imread
 from skimage.transform import resize
 from collections import Counter
 
-# Set up paths
 original_data_dir = '/Users/michaelrodden/Desktop/original_grape_data'
 train_dir = os.path.join(original_data_dir, 'binary_train')
 test_dir = os.path.join(original_data_dir, 'binary_test')
 
-# Function to load images from a directory
 def load_images_from_directory(directory, size=(150, 150)):
     images = []
     labels = []
@@ -27,11 +25,9 @@ def load_images_from_directory(directory, size=(150, 150)):
                 labels.append(label)
     return np.array(images), np.array(labels)
 
-# Load train and test images
 train_images, train_labels = load_images_from_directory(train_dir)
 test_images, test_labels = load_images_from_directory(test_dir)
 
-# Display a few images from each category
 def display_images(images, labels, category, n=5):
     category_images = images[labels == category]
     plt.figure(figsize=(15, 5))
@@ -48,7 +44,6 @@ display_images(train_images, train_labels, 'healthy')
 print("Displaying sample images from the 'esca' category:")
 display_images(train_images, train_labels, 'esca')
 
-# Basic statistics
 def print_basic_statistics(images, labels):
     print(f'Total number of images: {len(images)}')
     print(f'Image shape: {images[0].shape}')
@@ -63,7 +58,6 @@ print_basic_statistics(train_images, train_labels)
 print("Basic statistics for testing dataset:")
 print_basic_statistics(test_images, test_labels)
 
-# Visualize the distribution of image sizes
 def visualize_image_size_distribution(images):
     heights = [image.shape[0] for image in images]
     widths = [image.shape[1] for image in images]
@@ -79,7 +73,6 @@ def visualize_image_size_distribution(images):
 print("Visualizing the distribution of image sizes in the training dataset:")
 visualize_image_size_distribution(train_images)
 
-# Visualize the color distribution for both healthy and esca categories
 def visualize_color_distribution(images, labels):
     fig, axes = plt.subplots(2, 1, figsize=(15, 10), sharex=True)
     
@@ -103,7 +96,6 @@ def visualize_color_distribution(images, labels):
 print("Visualizing the color distribution for 'healthy' and 'esca' images:")
 visualize_color_distribution(train_images, train_labels)
 
-# Display mean and standard deviation of the dataset
 def calculate_mean_std(images):
     images_flat = images.reshape(-1, images.shape[-1])
     mean = np.mean(images_flat, axis=0)
@@ -114,7 +106,6 @@ mean, std = calculate_mean_std(train_images)
 print(f'Mean pixel value: {mean}')
 print(f'Standard deviation of pixel values: {std}')
 
-# Visualize the distribution of pixel values
 def visualize_pixel_value_distribution(images):
     images_flat = images.reshape(-1, images.shape[-1])
     plt.figure(figsize=(10, 5))
